@@ -1,0 +1,14 @@
+﻿<Window x:Class="TagSearch.FileWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:sd="http://icsharpcode.net/sharpdevelop/avalonedit"
+        Title="FileWindow" Width="600" Height="600" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <CheckBox Grid.Row="0" Name="checkbox" Checked="CheckBox_Checked" Unchecked="CheckBox_Checked">Show Tags</CheckBox>
+        <sd:TextEditor IsReadOnly="True" ShowLineNumbers="True" Name="TextBox" Grid.Row="1"></sd:TextEditor>
+    </Grid>
+</Window>
